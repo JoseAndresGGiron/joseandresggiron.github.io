@@ -360,6 +360,7 @@ footer{
   background-color:#a6d8f5;
   font-family: 'Sura', serif;
   margin-top:300px;
+  font-size: 20px;
   
 }
 #wdd230{
@@ -371,4 +372,9 @@ footer{
 }
 ul{
   font-family: 'Sura', serif;
+  font-size:18px;
 }
+h2 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size:2em;
+  }
