@@ -33,4 +33,4 @@ let year = d.getFullYear();
 let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
 
 
-document.getElementById("currentdate").textContent = document.lastModified;
+document.getElementById("lstmoddate").textContent = document.lastModified;

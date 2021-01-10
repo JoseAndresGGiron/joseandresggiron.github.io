@@ -367,8 +367,8 @@ footer{
   border-bottom: 3px solid grey;
 }
 .guapo{
-  float:right;
   bottom:0;
+  height:auto;
 }
 ul{
   font-family: 'Sura', serif;
