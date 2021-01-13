@@ -369,6 +369,8 @@ footer{
   border-bottom: 3px solid grey;
 }
 .guapo{
+  max-width: 162px;
+  max-height: 200px;
   bottom:0;
   height:auto;
 }
