@@ -1,11 +1,94 @@
+
 h1 {
+    margin-bottom: 20px;
     font-family: 'Bangers', cursive;
+    font-size: 16vmin;
+    text-align: center;
+}
+#h2-site-plan{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12vmin;
 }
 
+body{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 10vmin;
+}
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+nav ul{
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 0.75rem;
+    text-decoration: none;
+    font-family: 'Chelsea Market', cursive;
+	font-size: 1.20rem;
+}
 h2 {
     font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 9vmin;
 }
 
 p {
     font-family: 'Chelsea Market', cursive;
+    font-size: 5vmin;
+}
+
+
+#logo-shown img{
+    max-width: 300px;
+    
+    align-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    nav ul { 
+        display: grid;
+        /*grid-template-columns: repeat(5, 1fr);*/
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+    nav a {
+		font-size: 300rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+    }
+}
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+    }
+    nav ul{
+        margin: 100px;
+        nav ul li a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 0.75rem;
+    text-decoration: none;
+    font-family: 'Chelsea Market', cursive;
+	font-size: 1.20rem;
+}
+    }
+    }
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+    }
 }
