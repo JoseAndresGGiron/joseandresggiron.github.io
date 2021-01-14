@@ -2,33 +2,51 @@
 h1 {
     font-family: 'Bangers', cursive;
     font-size: 3.80rem;
+    color: #ff9028;
+    text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+    background-color: #f1f1f1;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     margin-top: 0px;
+    letter-spacing: 0.2rem;
 }
 #h2-site-plan{
     margin-top: 10px;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0px;
+    color:#112a46;
+    background-color: #f1f1f1;
 }
 
 body{
     font-family: 'Chelsea Market', cursive;
     font-size: 10vmin;
+    background-color:#f1f1f1;
+    
+}
+nav a:hover {
+	background-color: #112a46;
+	color:#f1f1f1;;
 }
 header,
 nav,
 main,
 footer {
 	max-width: 767px;
-	margin: 0 auto;
+    margin: 0 auto;
+    background-color: #f1f1f1;
 }
 nav ul{
+    background-color: #fffb3e;
     list-style-type: none;
 	margin: 0;
 	padding: 0;
     overflow: hidden;
+    border: 1px solid black;
 }
 nav ul li a {
 	display: block;
@@ -37,16 +55,24 @@ nav ul li a {
 	padding: 0.75rem;
     text-decoration: none;
     font-family: 'Chelsea Market', cursive;
-	font-size: 1.20rem;
+    font-size: 1.20rem;
+    border: 1px solid black;
 }
 h2 {
     font-family: 'Goudy Bookletter 1911', serif;
     font-size: 2rem;
+    color: #0d9de3;
+    margin-top: 0px;
 }
 
 p {
     font-family: 'Chelsea Market', cursive;
     font-size: 1rem;
+    margin-bottom: 25px;
+}
+.first-p{
+    margin-top: 15px;
+    margin-bottom: -15px;
 }
 
 #logo-shown img{
@@ -54,6 +80,9 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+#logo-shown{
+    margin-bottom: 20px;
 }
 .unordered-target{
     font-family: 'Chelsea Market', cursive;
@@ -68,8 +97,10 @@ p {
 }
 footer{
     text-align:center;
-    margin-top:100px;
-  font-size: 1rem;
+    font-size: 1rem;
+    margin-top: -16px;
+    background-color: #fffb3e;
+    max-height: 100px;
 }
 
 /* Tablet Views ******************************/
