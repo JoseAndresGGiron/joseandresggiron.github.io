@@ -1,0 +1,90 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header{
+    background-color:#f1f1f1;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+header img{
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+}
+header h1{
+    font-family: 'Bangers', cursive;
+    font-size: 2.25rem;
+    color: #ff9028;
+    text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+    background-color: #f1f1f1;
+    letter-spacing: 0.2rem;
+}
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+nav {
+    background-color: #fffb3e;
+    font-family: Verdana, sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    display:block;
+    padding: 0.8rem 2%;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.20rem;
+    color:#000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color:#fff;}
+
+nav ul li a:hover{
+    background-color:#112a46;
+    color: #f1f1f1;
+}
+
+nav ul.hide {display:none;}
+
+p {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    margin-left: 2%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40px 30px;
+    text-align:center;
+    font-size: 0.1rem;
+    margin-top: -16px;
+    background-color: #fffb3e;
+    max-height: 75px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
