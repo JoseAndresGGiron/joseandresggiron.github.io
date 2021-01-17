@@ -3,7 +3,20 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+main{
+    margin:0;
+    padding:0;
+    height:24%; 
+}
+body{
+    position:relative;
+    min-height: 100%;
+}
 header{
     background-color:#f1f1f1;
     display: grid;
@@ -30,14 +43,14 @@ header h1{
 
 nav button{
     margin: .2rem 2%;
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     font-size: 1.6rem;
     color: black;
 }
 
 nav {
-    background-color: #fffb3e;
+    background-color: #0d9de3;
     font-family: Verdana, sans-serif;
 }
 nav ul {
@@ -53,10 +66,15 @@ nav ul li a{
     font-family: 'Chelsea Market', cursive;
     font-size: 1.20rem;
     color:#000;
+    background-color:#fffb33;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
-nav ul li.active a{background-color: rgba(0,0,0,0.2); color:#fff;}
 
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2); color:#fff;}
+.active{
+    background-color: #fffb33;
+}
 nav ul li a:hover{
     background-color:#112a46;
     color: #f1f1f1;
@@ -70,16 +88,45 @@ p {
     margin-bottom: 25px;
     margin-left: 2%;
 }
-
+h2 {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 1.5rem;
+    color: #0d9de3;
+    margin-top: 0px;
+}
+.google-maps{
+    position:relative;
+    padding-bottom: 75%;
+    height:0;
+    overflow:hidden;
+}
+.google-maps iframe{
+    position:absolute;
+    top: 0;
+    left:0;
+    width:100% !important;
+    height:100% !important;
+}
+#contact-info{
+    text-align: left;
+}
 footer{
+    text-align:center;
+    font-size: 0.1rem;
+    background-color: #fffb3e;
+    text-align:center;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+#footer-copyright{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 40px 30px;
+    grid-template-rows: 25px 30px;
     text-align:center;
     font-size: 0.1rem;
     margin-top: -16px;
-    background-color: #fffb3e;
-    max-height: 75px;
+    background-color:#0d9de3;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
